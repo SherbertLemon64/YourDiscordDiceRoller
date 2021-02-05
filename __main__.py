@@ -39,5 +39,5 @@ async def on_message(msg: discord.message.Message):
     if roll: 
         await msg.channel.send(dice_roll_string(msg.author, roll))
 
-
-app.run(token)
+if __name__ == '__main__':
+    app.run(token)
